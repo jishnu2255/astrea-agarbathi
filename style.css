@@ -1,0 +1,185 @@
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: white;
+        }
+
+        .nav1 {
+            background-color: #d60303; /* Dark red */
+            height: 70px;
+            width: 100%;
+            display: flex;
+            position: relative;
+            z-index: 100;
+        }
+
+        .logo {
+            background-image: url(logo.png);
+            background-size: 97%;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-left: 2%;
+            background-color: black;
+            height: 70px;
+            display: inline-flex;
+            width: 10%;
+        }
+
+        .nav_opt {
+            height: 70px;
+            display: inline-flex;
+            justify-content: center;
+            padding-left: 32%;
+            margin-left: 32%;
+        }
+
+        ul {
+            margin-top: 6%;
+            margin-left: -119%;
+        }
+
+        li {
+            text-decoration: none;
+            color: white;
+            display: inline;
+            justify-content: space-around;
+        }
+
+        span {
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        span:hover {
+            color: #FFD700; /* Gold color on hover */
+        }
+
+        /* Slider Styles */
+        .slider-container {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            width: 500%;
+            height: 100%;
+            animation: slide 20s infinite;
+        }
+
+        .slide {
+            width: 100%;
+            height: 100%;
+            flex-shrink: 0;
+            background-size:contain;
+            
+            background-position: center;
+        }
+
+        .slide:nth-child(1) {
+            background-image: url(IMG-20250607-WA0063.jpg);
+        }
+
+        .slide:nth-child(2) {
+            background-image: url(IMG-20250607-WA0026.jpg);
+        }
+
+        .slide:nth-child(3) {
+            background-image: url(IMG-20250607-WA0066.jpg);
+            
+        }
+
+        .slide:nth-child(4) {
+            background-image: url(IMG-20250607-WA0078.jpg);
+        }
+
+        .slide:nth-child(5) {
+            background-image: url(IMG-20250607-WA0053.jpg);
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(0); }
+            25% { transform: translateX(-100%); }
+            45% { transform: translateX(-100%); }
+            50% { transform: translateX(-200%); }
+            70% { transform: translateX(-200%); }
+            75% { transform: translateX(-300%); }
+            95% { transform: translateX(-300%); }
+            100% { transform: translateX(-400%); }
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #FFD700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .cta-button {
+            background-color: #d60303;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #FFD700;
+            color: #000;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .nav_opt {
+                padding-left: 20%;
+                margin-left: 20%;
+            }
+        }
+ 

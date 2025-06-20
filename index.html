@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divine Fragrances - Premium Agarbathi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav1">
+        <div class="logo"></div>
+        <div class="nav_opt">
+            <ul>
+                <li><span>Home</span></li>
+                <li><span>Our Services</span></li>
+                <li><span>Contact Us</span></li>
+                <li><span>About Us</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+        </div>
+        <div class="overlay">
+            <div class="hero-content">
+                <h1 class="hero-title">ASTREA</h1>
+                <p class="hero-subtitle">
+                    Experience the divine essence of our handcrafted agarbathis, made with the finest natural ingredients 
+                    and traditional techniques passed down through generations. Our fragrances purify your space and elevate 
+                    your spiritual journey with every breath.
+                </p>
+                <button class="cta-button">Explore Our Collection</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for enhanced interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scroll for navigation links
+            const navLinks = document.querySelectorAll('span');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.textContent.toLowerCase().replace(' ', '-');
+                    const targetElement = document.getElementById(targetId);
+                    if(targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 70,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // CTA button click handler
+            const ctaButton = document.querySelector('.cta-button');
+            if(ctaButton) {
+                ctaButton.addEventListener('click', function() {
+                    alert('Thank you for your interest! Our premium agarbathi collection will be displayed here.');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
