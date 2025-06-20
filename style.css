@@ -83,26 +83,48 @@
         }
 
         .slide:nth-child(1) {
-            background-image: url(IMG-20250607-WA0063.jpg);
+            background-image: url(IMG-20250607-WA0027.jpg);
         }
 
         .slide:nth-child(2) {
-            background-image: url(IMG-20250607-WA0026.jpg);
+            background-image: url(IMG-20250607-WA0069.jpg);
         }
 
         .slide:nth-child(3) {
-            background-image: url(IMG-20250607-WA0066.jpg);
+            background-image: url(IMG-20250607-WA0050.jpg);
             
         }
 
         .slide:nth-child(4) {
-            background-image: url(IMG-20250607-WA0078.jpg);
+            background-image: url(IMG-20250607-WA0040.jpg);
         }
 
         .slide:nth-child(5) {
+            background-image: url(IMG-20250607-WA0044.jpg);
+        }
+        .slide:nth-child(6) {
+            background-image: url(IMG-20250607-WA0038.jpg);
+        }
+        .slide:nth-child(7) {
+            background-image: url(IMG-20250607-WA0054.jpg);
+        }
+        .slide:nth-child(8) {
             background-image: url(IMG-20250607-WA0053.jpg);
         }
-
+        .slide:nth-child(9) {
+            background-image: url(IMG-20250607-WA0064.jpg);
+        }
+        .slide:nth-child(10) {
+            background-image: url(IMG-20250607-WA0053.jpg);
+        }
+        .slide:nth-child(11) {
+            background-image: url(IMG-20250607-WA0073.jpg);
+        }
+        .slide:nth-child(12) {
+            background-image: url(IMG-20250607-WA0060.jpg);
+        }
+       
+       
         @keyframes slide {
             0% { transform: translateX(0); }
             20% { transform: translateX(0); }
